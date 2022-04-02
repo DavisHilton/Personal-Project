@@ -5,18 +5,87 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Davis Portfolio</title>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="/styles/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
-<body>
-<div class="portfolio">
-<header>
+<body class="main-content">
+  <!-- This is the header section -->
+<header class ='section sec1 header active'>
   <nav>
-    <h3 class ="logo"></h3>
-    <img src="" alt="">
+    <h3 class ="logo"></h3>   
   </nav>
 </header>
+<!-- This is the main body section -->
+<main>
+  <section class = "section sec2 about"><h2>AboutMe</h2></section>
 
+  <section class = "section sec3 resume"> <h2>Resume</h2></section>
+
+  <section class = "section sec4 projects"><h2>Projects</h2></section>
+
+  <section class = "section sec5 contacts"><h2>Contact Me</h2></section>
+</main>
+
+<!--  === Buttons to controll the sections === -->
+
+<!-- aside>div.control>.control.control-$.active-btn*5. 
+- this created the entire aside section with divs
+  and class with numbers acending(-$ gives numbers)
+
+==== For part 2 will go to fontawsome to create  
+     icon for each div section button
+    -->
+<aside>
+  <div class="controls">
+    <div class="control control-1 active-btn" data-id ="header">    
+        <i class="fa fa-home"></i>    <!--ha dto take d off fad to make work -->
+    </div>
+    <div class="control control-2" data-id ="about">
+      <i class="fa fa-user"></i> 
+    </div>
+    <div class="control control-3" data-id ="resume">
+      <i class="fas fa-briefcase"></i>
+      </div>    
+    <div class="control control-4" data-id ="projects">
+      <i class="fa fa-laptop-code"></i> 
+    </div>
+    <div class="control control-5"data-id ="contact">
+      <i class="fas fa-address-card"></i>
+    </div>
+  </div> 
+</aside>
+
+<!-- <footer>
+  <div class="socials">
+    <div class="social social-1">
+      <a href="#">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+
+    <div class="social social-2">
+      <a href="#">
+        <i class="fab fa-facebook-square"></i>
+      </a>
+    </div>
+
+    <div class="social social-3">
+      <a href="#">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </div>
+
+    <div class="social social-4">
+      <a href="#">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </div>  
+</footer> -->
 </div>
 </body>
 </html>
